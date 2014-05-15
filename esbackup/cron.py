@@ -3,6 +3,8 @@
 # $Id: cron.py 3 2011-10-31 06:44:49Z yaka $
 #
 
+#  python cron.py --config ./sample/esbackup_config.py
+
 import logging
 import sys
 

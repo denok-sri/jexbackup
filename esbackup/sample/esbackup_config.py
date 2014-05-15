@@ -72,17 +72,16 @@ default_scenario = [
 ]
 
 tasks = {
-	"etc": {
+	"jb_test": {
 		"scenario": default_scenario,
 		"files": [
-			"/usr/local/etc",
-			"/etc",
+			"/home/denok/jb_test",
 		],
 	},
-	"logs": {
+	"home_test": {
 		"scenario": default_scenario,
 		"files": [
-			"/var/log/messages",
+			"/home/denok/SUNRISEINNOV/web_access_sentry_script",
 		],
 	},
 }
