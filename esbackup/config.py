@@ -52,7 +52,7 @@ else:
 				args.config_file = arg
 			else:
 				print "Unsupported option: (%r, %r)" % (opt, arg)
-				_usage(66)
+				_usage(1)
 		args.tasks = args_rem
 		return args
 
@@ -70,7 +70,8 @@ def load_config(mode=None):
 		else:
 			args.config_file = "/etc/esbackup_config.py"
 
-	args.config_file = os.path.realpath(args.config_file)
+	# Return the canonical path of the specified filename, eliminating any symbolic links encountered in the path
+    args.config_file = os.path.realpath(args.config_file)
 
 	sys.path.insert(0, os.path.dirname(args.config_file))
 	try:

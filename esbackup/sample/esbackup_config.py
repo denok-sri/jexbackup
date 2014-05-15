@@ -54,14 +54,14 @@ default_scenario = [
 	# Protect
 	#("plugin", ["hash.md5.builtin"]),
 	#("plugin", ["hash.sha1.builtin"]),
-	("plugin", ["hash.sha256.builtin"]),
+	#("plugin", ["hash.sha256.builtin"]),
 	#("plugin", ["hash.sha512.builtin"]),
 	#("plugin", ["gpg.sign", gpg_homedir, gpg_keyname, gpg_passphrase]),
 	#("plugin", ["gpg.signencrypt", gpg_homedir, gpg_keyname, gpg_passphrase]),
 	#("plugin", ["gpg.encrypt", gpg_homedir, gpg_keyname, gpg_passphrase]),
 
 	# Upload
-	("plugin", ["ftp", ftp_host, ftp_username, ftp_password, ftp_remote_dir]),
+	#("plugin", ["ftp", ftp_host, ftp_username, ftp_password, ftp_remote_dir]),
 
 	# Post-exec
 	#("exec", ["sh", "-c", "sleep 1; echo He-he."]),
